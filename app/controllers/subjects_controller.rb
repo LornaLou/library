@@ -49,6 +49,6 @@ class SubjectsController < ApplicationController
   private
 
   def subject_params
-    params.require(:subject).permit(:title,:author,:genre)
+    params.require(:subject).permit(:title,:author,:genre,:price,:published_date)
   end
 end
